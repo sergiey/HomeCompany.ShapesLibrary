@@ -66,7 +66,7 @@ public class Triangle : IShape
 
     public bool IsRightAngled()
     {
-        const double calculationError = 5E-2;
+        const double calculationError = 0.1;
         DefineTriangleSides(out double hypotenuse, out double leg1, out double leg2);
         return Math.Abs(hypotenuse * hypotenuse - leg1 * leg1 - leg2 * leg2) < calculationError;
     }
